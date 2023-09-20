@@ -1,0 +1,28 @@
+@import 'variables';
+
+.header {
+    background: $primary-color !important;
+    color: $primary-text-color !important;
+    text-align: center;
+    height: 10vh;
+
+    :hover {
+        cursor: pointer;
+    }
+
+    .header-title {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-weight: 700;
+        font-size: 50px;
+        margin: 15px;
+    }
+
+    &.sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+}

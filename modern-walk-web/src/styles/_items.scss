@@ -1,0 +1,93 @@
+@import "variables";
+
+.items-category {
+    margin-top: 95px;
+    margin-left: 4%;
+    margin-right: 4%;
+    
+    .area-title {
+        margin-left: 100px;
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    .no-data {
+        font-family: $font-family;
+        font-size: 30px;
+        font-weight: 700;
+        box-shadow: none;
+        border-radius: none;
+    }
+}
+
+.items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100%;
+    div {
+        margin: 25px;
+        border-radius: 20px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+
+        div {
+            margin: -8px;
+            max-width: 344px;
+            max-height: 440px;
+            min-height: 440px;
+            text-align: center;
+            border-radius: none;
+            box-shadow: none;
+
+            .item-title {
+                font-size: 22px;
+                font-weight: 700;
+                font-family: $font-family;
+                max-height: 30px;
+                min-height: 30px;
+                margin: 10px;
+                margin-bottom: 15px;
+                overflow: hidden;
+                display: -webkit-box;
+                -webkit-line-clamp: 1;
+                -webkit-box-orient: vertical;
+            }
+
+            img {
+                height: 200px;
+                width: auto;
+                margin: 0 auto;
+            }
+
+
+
+            .item-details {
+                margin-top: 15px;
+
+                p {
+                    overflow: hidden;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 4;
+                    -webkit-box-orient: vertical;
+                }
+
+                .item-price {
+                    color: #0E42FD;
+                    font-weight: 700;
+                    font-size: 23px;
+                    font-family: $font-family;
+                    margin-top: 0;
+                }
+
+                p {
+                    margin-top: 5px;
+                    margin-left: 12%;
+                    margin-right: 12%;
+                    font-weight: 400;
+                    font-size: 16px;
+                    color: $primary-text-color;
+                }
+            }
+        }
+    }
+}
