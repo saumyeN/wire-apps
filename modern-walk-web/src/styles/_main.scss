@@ -11,14 +11,14 @@
         margin-right: 4%;
 
         .area-title {
-            margin-left: 100px;
+            margin-left: 140px;
             margin-top: 25px;
             font-size: 24px;
             font-weight: 700;
         }
 
         .title-top {
-            margin-top: 15px !important;
+            margin-top: 5px !important;
         }
 
         .no-data {
@@ -33,10 +33,11 @@
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
+            margin-top: 15px;
 
             .item-category-tile {
-                min-width: 40%;
-                max-width: 40%;
+                min-width: 41%;
+                max-width: 41%;
                 min-height: 300px;
                 text-align: center !important;
                 display: flex;

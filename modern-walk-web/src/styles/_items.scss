@@ -4,11 +4,16 @@
     margin-top: 95px;
     margin-left: 4%;
     margin-right: 4%;
-    
+    min-height: 90vh;
+
     .area-title {
-        margin-left: 100px;
+        margin-left: 140px;
         font-size: 24px;
         font-weight: 700;
+    }
+
+    .title-top {
+        margin-top: 15px !important;
     }
 
     .no-data {
@@ -25,6 +30,7 @@
     justify-content: center;
     flex-wrap: wrap;
     height: 100%;
+    margin-top: 15px;
     div {
         margin: 25px;
         border-radius: 20px;
@@ -36,13 +42,13 @@
             max-height: 440px;
             min-height: 440px;
             text-align: center;
-            border-radius: none;
-            box-shadow: none;
+            
 
             .item-title {
                 font-size: 22px;
                 font-weight: 700;
                 font-family: $font-family;
+                
                 max-height: 30px;
                 min-height: 30px;
                 margin: 10px;
@@ -51,11 +57,14 @@
                 display: -webkit-box;
                 -webkit-line-clamp: 1;
                 -webkit-box-orient: vertical;
+                border-radius: none;
+                box-shadow: none;
             }
 
             img {
                 height: 200px;
                 width: auto;
+                max-width: 300px;
                 margin: 0 auto;
             }
 
@@ -89,5 +98,8 @@
                 }
             }
         }
+    }
+    .filler {
+        height: 100% !important;
     }
 }

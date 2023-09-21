@@ -25,28 +25,28 @@ function ItemCategory() {
     }, [setItems, location.pathname]);
     return (
         <div className="items-category">
-            <div className="area-title">
+            <br />
+            <div className="area-title title-top">
                 {
                     items[0]?.category === ItemCategoryUrlParameter.MENS_CLOTHING ? ItemCategoryTitle.MENS_CLOTHING : ItemCategoryTitle.WOMENS_CLOTHING
                 }
             </div>
             <div className="items">
                 {
-                    items ? 
-                    items.map(item => (
-                        <div>
-                            <Item title={item.title} description={item.description} imageUrl={item.image} category={item.category} price={item.price}
-                                itemCategories={itemCategories} />
+                    items ?
+                        items.map(item => (
+                            <div>
+                                <Item title={item.title} description={item.description} imageUrl={item.image} category={item.category} price={item.price}
+                                    itemCategories={itemCategories} />
+                            </div>
+                        ))
+                        :
+                        <div className="no-data">
+                            Not available. Please try again later.
                         </div>
-                    ))
-                    :
-                    <div className="no-data">
-                        Not available. Please try again later.
-                    </div>
                 }
             </div>
         </div>
-
     )
 }
 

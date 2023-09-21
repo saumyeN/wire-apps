@@ -19,7 +19,7 @@ function getCategories() {
   return categories;
 }
 
-// fetch items for flash sale, since there is no such API fetch top 5 items
+// fetch items for flash sale, since there is no such API fetch top 4 items
 async function getFlashSalesAsync() {
   try {
     const response = await fetch("https://fakestoreapi.com/products?limit=4");
